@@ -1,0 +1,42 @@
+{
+  "users": {
+    "1": {
+      "name": "John Doe",
+      "email": ""
+    },
+    "2": {
+      "name": "Jane Smith",
+      "email": ""
+    }
+  },
+  "passwords": {
+    "1": {
+      "password": "111"
+    },
+    "2": {
+      "password": "qwerty"
+    }
+  },
+  "accounts": {
+    "1": {
+      "owner_id": "1",
+      "balance": 901.5,
+      "account_id": "1"
+    },
+    "2": {
+      "owner_id": "1",
+      "balance": 2100.0,
+      "account_id": "2"
+    },
+    "3": {
+      "owner_id": "2",
+      "balance": 1500,
+      "account_id": "3"
+    },
+    "4": {
+      "owner_id": "2",
+      "balance": 2500,
+      "account_id": "4"
+    }
+  }
+}
