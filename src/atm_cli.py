@@ -1,7 +1,7 @@
-from atm import ATM, ATMError, UnauthorizedAccessError, AccountNotFoundError, InvalidAmountError
+from atm import ATM, ATMError, UnauthorizedAccessError
 from atm_handler.atm_handler import AtmHandler
 
-# io_interface.py
+
 class IOInterface:
     def input(self, prompt: str) -> str:
         return input(prompt)
@@ -17,10 +17,10 @@ class ATMCLI:
 
         self.io_interface = IOInterface()
         # init atm instance with data from file
-        self.atm = ATM(self.atm_handler.get_users(), 
+        self.atm = ATM(self.atm_handler.get_users(),
                     self.atm_handler.get_passwords(),
                     self.atm_handler.get_accounts())
-        
+
         # Scalable menu actions
         self.menu_actions = {
             "1": ("Check balance", self.handle_balance),
@@ -71,7 +71,7 @@ class ATMCLI:
                 if func:
                     func()
                 else:
-                    self.io.print("Logging out...")
+                    self.io_interface.print("Logging out...")
                     break
             else:
                 self.io_interface.print("Invalid option.")

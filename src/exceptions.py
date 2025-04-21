@@ -12,5 +12,3 @@ class AccountNotFoundError(ATMError):
 
 class InvalidAmountError(ATMError):
     pass
-
-

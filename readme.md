@@ -59,13 +59,6 @@ The `data.json` file stores user account information in the following format:
   }
 }
 
-improvement
-instead of working with weak type dict i could serialized/deserialize the file data into DAO (python data class)
-user
-loginDetails
-accounts
-this requires implementing the logic in atm handler and changing the atm class to work with these classes
-
 
 considerations:
 i didnt want to make one big flat table because it is kind of unefficient and when a change happens it requires
